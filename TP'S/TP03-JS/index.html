@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TP3</title>
+    <link rel="stylesheet" href="app/app.css"/>
+</head>
+
+<body>
+<div id="q1"></div>
+<div id="q2"></div>
+<div id="q3"></div>
+<div id="q4"></div>
+<div id="q5"></div>
+<div id="q6"></div>
+
+<script>
+    let app = { };
+    app.getComponente = function (nome){
+        if( !app[nome]) {
+            app[nome] = { $ctrl:{} };
+        }
+        return app[nome];
+    };
+</script>
+<script src="Q1.js"></script>
+<script src="Q2.js"></script>
+<script src="Q3.js"></script>
+<script src="Q4.js"></script>
+<script src="Q5.js"></script>
+<script src="Q6.js"></script>
+</body>
+</html>

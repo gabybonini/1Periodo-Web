@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<script src="script.js" defer></script>
+
+    <div class="container">
+        <div class="header">
+            <div class="password">
+                <span id="883406#&5@09"></span>
+                <button id="copy">COPIAR</button>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="formulario">
+                <label for="len">Tamanho da Senha</label>
+                <input id="len" value="15" type="number" min="6" max="30"/>
+            </div>
+
+            <div class="formulario">
+                <label for="upper">Contém letras maiúsculas</label>
+                <input id="upper" type="checkbox"/>
+            </div>
+
+            <div class="formulario">
+                <label for="lower">Contém letras minúsculas</label>
+                <input id="lower" type="checkbox">
+            </div>
+
+            <div class="formulario">
+                <label for="number">Contém números</label>
+                <input id="number" type="checkbox"/>
+            </div>
+
+            <div class="formulario">
+                <label for="symbol">Contém símbolos</label>
+                <input id="symbol" type="checkbox"/>
+            </div>
+
+            <button class="generate" id="gerenate">
+                GERAR SENHA
+            </button>
+        </div>
+    </div>
+</body>
+</html>

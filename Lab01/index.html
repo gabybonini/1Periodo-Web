@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="styless.css" rel="stylesheet">
+    <link href="script.js" rel="script">
+</head>
+<body>
+    <h1 class="Text">Iniciando do mundo Web!</h1>
+    <p class="Text">JAVASCRIP, CSS, HTML</p>
+
+    <script type="text/javascript">
+        let a = prompt("Digite seu nome: ", "Nome");
+        let b = prompt("Seu sobrenome: ");
+        document.write("Boa noite, " + a + " " + b + "<br />");
+
+        let mensagem;
+        let retorno = confirm("Clique em um dos botões!");
+        if (retorno == true){
+            mensagem = "Operação confirmada."
+        }
+        else {
+            mensagem = "Você cancelou a operação. "
+        }
+        document.write(mensagem);
+
+        n = 20;
+        document.write("A variável n é do tipo " + typeof n + "<br />")
+        n = String(n); <!-- convertendo de número para string -->
+        document.write("Agora n é do tipo " + typeof n + "<br />")
+
+        b = true;
+        document.write("A variável b é do tipo " + typeof b + "<br />")
+        b = b.toString(); <!-- convertendo de boolean para string -->
+        document.write("Agora b é do tipo " + typeof b + "<br />")
+        /*
+        alert("Conteúdos serão adicionados em breve!")
+        confirm("Deseja receber notificações desta página?")
+        prompt("Qual seu nome?")
+        <a href="f()">
+        pressione aqui e a função será executada</a>
+
+         */
+    </script>
+</body>
+</html>
+
